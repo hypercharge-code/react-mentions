@@ -1,6 +1,6 @@
 {
-  "name": "react-mentions",
-  "version": "0.0.0-development",
+  "name": "@hypercharge/react-mentions",
+  "version": "2.2.3",
   "description": "React mentions input",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,12 +18,13 @@
     "publish-demo": "node scripts/gh-pages-publish.js $CIRCLE_BRANCH",
     "start": "nwb serve-react-demo",
     "semantic-release": "semantic-release",
+    "semantic-release-local": "semantic-release pre --debug=false && npm publish && semantic-release post --debug=false",
     "test": "nwb test-react",
     "test:watch": "nwb test-react --server"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/signavio/react-mentions.git"
+    "url": "https://github.com/hypercharge-code/react-mentions.git"
   },
   "keywords": [
     "react",
@@ -33,9 +34,9 @@
   "author": "Jan-Felix Schwarz",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/signavio/react-mentions/issues"
+    "url": "https://github.com/hypercharge-code/react-mentions/issues"
   },
-  "homepage": "https://github.com/signavio/react-mentions",
+  "homepage": "https://github.com/hypercharge-code/react-mentions",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "condition-circle": "^2.0.1",
@@ -54,7 +55,7 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "recompose": "^0.26.0",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^15.9.12"
   },
   "dependencies": {
     "lodash": "^4.5.1",
